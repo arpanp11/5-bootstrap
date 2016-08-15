@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+
+      <title>Bootstrap - App</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
+      <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+        
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+        
+      <style type="text/css">
+          #logo {
+              font-family: 'Courgette', cursive;
+              font-size: 140%;
+              color:  #cc00cc;
+          }
+          
+          .jumbotron {
+            background-image: url(image/background.jpeg);
+            text-align: center;
+            margin-top: 50px;
+          }
+        
+          #email {
+              width: 300px;
+          }
+          
+          #appSummary {
+              text-align: center;
+              margin-top: 100px;
+              margin-bottom: 70px;
+          }
+          
+          .card-img-top {
+              width: 100%;
+              height: 200px;
+          }
+          
+          #appicon {
+              width: 200px;
+          }
+          
+          #footer {
+              background-color: aqua;
+              padding-top: 150px;
+              margin-top: 50px;
+              text-align: center;
+              padding-bottom: 50px;
+          }
+          
+          body {
+              position: relative; 
+          }
+        </style>
+
+    </head>
+    
+    <body data-spy="scroll" data-target="#navbar" data-offset="150">
+    
+          <nav class="navbar navbar-light bg-faded navbar-fixed-top" id="navbar">
+              <a id="logo" class="navbar-brand" href="#">MyApp</a>
+              <ul class="nav navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#inmbotron">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer">Download</a>
+                </li>
+              </ul>
+              <form class="form-inline pull-xs-right">
+                <input class="form-control" type="email" placeholder="Email">
+                <input class="form-control" type="password" placeholder="Password">
+                <button class="btn btn-success" type="submit">Log in</button>
+              </form>
+         </nav>
+        
+        <div class="jumbotron" id="jumbotron">
+              <h1 class="display-3">My Awesome App</h1>
+              <p class="lead">This is my first App.You should download this App!</p>
+              <hr class="m-y-2">
+              <p>Do you want to stay with latest News? Join our mailing list!</p>
+            
+              <form class="form-inline">
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email address</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">@</div>
+                      <input type="text" class="form-control" id="email" placeholder="enter your email">
+                    </div>
+                  </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </form>
+        </div>
+        
+        <div class="container" id="appSummary">
+        
+            <div class="row">
+            
+                <h1>Why This App is Awesome</h1>
+                <p class="lead">Know about Us</p>
+            
+            </div>
+            
+            <div class="container" id="about">
+                <div class="card-deck-wrapper">
+                      <div class="card-deck">
+                        <div class="card">
+                          <img class="card-img-top" src="image/family.jpeg" alt="Card image cap">
+                          <div class="card-block">
+                            <h4 class="card-title"><i class="fa fa-anchor" aria-hidden="true"></i>
+                     Achievement</h4>
+                            <p class="card-text">We create many different type of live website for many popular companies. Our clients are ABC Pvt Co., XYZ Infosys, Web technology and more.</p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img class="card-img-top" src="image/strip.jpeg" alt="Card image cap">
+                          <div class="card-block">
+                            <h4 class="card-title"><i class="fa fa-binoculars" aria-hidden="true"></i> About Us</h4>
+                            <p class="card-text">We make good live website according to your business requirement.</p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img class="card-img-top" src="image/hand.jpeg" alt="Card image cap">
+                          <div class="card-block">
+                            <h4 class="card-title"><i class="fa fa-phone" aria-hidden="true"></i>
+                     Contact Us</h4>
+                            <p class="card-text">
+                              Call Us: (123) 456-7890</p>
+                              Email: emsilus@myapp.com
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            
+            <div class="container" id="footer">
+            
+                <div class="row">
+                
+                    <h2>Download the app</h2>
+                    <p class="lead">Why shoud I download the App?</p>
+                    
+                    <p><a href="#"><img id="appicon" src="image/applogo.jpeg"></a></p>
+                
+                </div>   
+            
+            </div>
+            
+            <hr>
+            
+            <p>Copyright &copy; 2016 MYAPP Inc. All rights reserved</p>
+
+    </body>
+    
+</html>
+
